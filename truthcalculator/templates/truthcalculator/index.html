@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Table Calculator</title>
+
+    <!-- Link to static CSS and JS files -->
+    {% load static %}
+    <link rel="icon" href="{% static 'img/truthsociety.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'truthcalculator/style.css' %}">
+    <script src="{% static 'truthcalculator/main.js' %}" defer></script>
+</head>
+<body>
+    {% csrf_token %}
+    <div>
+        <div>
+            <h1>Truth Table Calculator Version 1.0</h1>
+            <p>Enter logical expressions using variables and operators AND, OR, NOT, etc.</p>
+            <p>Logic must be surrounded with parentheses!</p>
+            <p>Supported operators: AND, OR, NOT, IMP, IFF</p>
+            <p>You can change the number of variables (1-5).</p>
+            <p>The table updates automatically as you type.</p>
+        </div>
+        <div class="headergroup">
+            <input type="number" id="varCount" min="2" max="5" value="2">
+            <button onClick="updateTable()" id="updateBtn">Update</button>
+        </div>
+        <table id="truthTable">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
+
