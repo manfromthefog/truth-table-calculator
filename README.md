@@ -14,4 +14,6 @@ The DOM auto-updates upon user input.
 ## Future Functionality
 - You will be able to add more columns.
 - You will be able to search for a specific row in the truth table and have an option to compare things side-by-side.
-- You will be able to download your truth table and re-upload it (in case you discover a new theorem, be sure mention me please =)
+- You will be able to download your truth table and re-upload it
+
+##### In case you discover a new theorem, be sure mention me please =)
